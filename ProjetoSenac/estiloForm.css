@@ -1,0 +1,15 @@
+*{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: blanchedalmond;
+}
+label{
+    background-color: burlywood;
+    font-size: 20px;
+}
+.btn_submit{
+    background-color: aquamarine;
+    font-size: 30px;
+}
+#idnome, #idsobrenome{
+    font-size: 20px;
+}

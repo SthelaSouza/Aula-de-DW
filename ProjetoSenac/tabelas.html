@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Tabelas</title>
+</head>
+<body>
+    <table border="1"> <!-- criar tabelas com bordas-->
+        <caption>Criar tabelas na vertical</caption>
+        <tr><!--criar linhas -->
+            <th>Nome</th> <!-- criar titulos-->
+            <th>Idade</th>
+            <th>Profissão</th>
+        </tr>
+        <tr>
+            <td>Ted</td> <!-- criar células -->
+            <td>22</td>
+            <td>Estudante</td>
+        </tr>
+        <tr></tr>
+            <td>Ralf</td>
+            <td>26</td>
+            <td>Designer</td>
+        </tr>
+    </table>
+    <br>
+    
+    <table border="1">
+        <caption>criar tabelas na horizontal</caption>
+        <tr>
+            <th>Nome</th>
+            <td>Ralf</td>
+        </tr>
+        <tr>
+            <th>idade</th>
+            <td>22</td>
+        </tr>
+        <tr>
+            <th>profissão</th>
+            <td>Médico</td>
+        </tr>
+    </table>
+    <br>
+    
+    <table border="1">
+        <caption>Tabelas com cabeçalho e rodapé</caption>
+        <thead><!-- criar cabeçalho da tabela-->
+            <tr>
+                <td>alimento</td>
+                <td>Preço</td>
+                <td>Quantidade</td>
+            </tr>
+        </thead>
+        <tbody> <!-- criar corpo da tabela-->
+            <tr>
+                <td>batata</td>
+                <td>R$ 2,00</td>
+                <td>150g</td>
+            </tr>
+        </tbody>
+        <tfoot> <!-- criar rodapé-->
+            <tr>
+                <td>Descrição</td>
+                <td colspan="2">Produto conservar em local ambiente</td>
+            </tr>
+        </tfoot>
+    </table>
+    <br>
+    
+    <table border="1">
+        <caption>Criar um espaço vazio na tabela</caption>
+        <tr>
+            <td>&nbsp;</td><!-- criar um espaço dentro da tabela-->
+            <td>Nome</td>
+        </tr>
+        <tr>
+            <td>sthela</td>
+            <td>souza</td>
+        </tr>
+    </table>
+    <br>
+    
+    <table border="1">
+        <caption>Mesclando colunas na tabela</caption>
+        <tr>
+            <td>Nome</td>
+            <td colspan="3">Telefones</td><!-- criar uma mescla na coluna da tabela-->
+        </tr>
+        <tr>
+            <td>Ralf</td>
+            <td>9292929292929</td>
+            <td>8585858585858</td>
+            <td>35221402</td>
+        </tr>
+        <tr>
+            <td>Ted</td>
+            <td>9292929292929</td>
+            <td>8585858585858</td>
+            <td>35221402</td>
+        </tr>
+    </table>
+    <br>
+    
+    <table border="1">
+        <caption>Mesclando linhas na tabela</caption>
+        <caption>Exemplo de Título</caption><!-- criar um título na tabela-->
+        <tr>
+            <th>Nome</th>
+            <td>Ted</td>
+        </tr>
+        <tr>
+            <th rowspan="2">Profissão</th> <!-- criar uma mescla na linha da tablea-->
+            <td>Medico</td>
+        </tr>
+        <tr>
+            <td>Professor</td>
+        </tr>
+    </table>
+
+</body>
+</html>
