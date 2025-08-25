@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agenda</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-image: url("https://png.pngtree.com/png-vector/20191027/ourmid/pngtree-paw-vector-foot-trail-print-of-cat-paw-dog-puppy-cat-png-image_1857057.jpg");
+      background-size: cover;
+      background-repeat: repeat;
+      min-height: 100vh;
+    }
+
+    /* ==== MENU NAV ==== */
+    nav {
+      background-color: white;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      width: 100%;
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    nav ul li {
+      display: inline-block;
+      margin: 0;
+    }
+
+    nav ul li a {
+      display: block;
+      padding: 15px 30px;
+      color: #e7bf2b;
+      text-decoration: none;
+      font-weight: bold;
+      border: 2px solid transparent;
+      transition: all 0.3s ease;
+      font-size: 15px;
+    }
+
+    nav ul li a:hover {
+      background-color: #e7bf2b;
+      color: white;
+      border-color: #e7bf2b;
+    }
+
+    /* ==== FORMULÁRIO ==== */
+    .form-container {
+      max-width: 600px;
+      background-color: white;
+      margin: 80px auto;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .form-container label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: 500;
+      color: #333;
+    }
+
+    .form-container input[type="text"],
+    .form-container select {
+      width: 100%;
+      padding: 14px 12px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      transition: 0.3s;
+    }
+
+    .form-container input[type="text"]:focus,
+    .form-container select:focus {
+      border-color: #e7bf2b;
+      outline: none;
+      box-shadow: 0 0 5px rgba(231, 191, 43, 0.4);
+    }
+
+    .form-container input[type="submit"] {
+      width: 100%;
+      background-color: #e7bf2b;
+      color: white;
+      padding: 14px;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .form-container input[type="submit"]:hover {
+      background-color: #d6aa26;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- MENU FORA DO MAIN -->
+  <nav>
+    <ul>
+      <li><a href="indexdog.html">Home</a></li>
+      <li><a href="agendaservico.html">Agende sua vista</a></li>
+      <li><a href="contatoindex.html">Contato</a></li>
+    </ul>
+  </nav>
+
+  <!-- CONTEÚDO -->
+  <main>
+    <div class="form-container">
+      <h2>Agendamento de Serviço</h2>
+      <form action="">
+        <label for="fname">Nome</label>
+        <input type="text" id="fname" name="firstname" placeholder="Nome do cliente">
+
+        <label for="lname">Sobrenome</label>
+        <input type="text" id="lname" name="lastname" placeholder="Sobrenome do cliente">
+
+        <label for="country">Serviço</label>
+        <select id="country" name="Serviço">
+          <option value="banhotosa">Banho e Tosa</option>
+          <option value="racaoacessorio">Rações e Acessórios</option>
+          <option value="veterinario">Veterinário</option>
+        </select>
+
+        <input type="submit" value="Enviar">
+      </form>
+    </div>
+  </main>
+
+</body>
+</html>
